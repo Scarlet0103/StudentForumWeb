@@ -50,7 +50,7 @@
       <input type="password" name="" placeholder="Password">
       <input type="submit" name="" value="Login">
       <p id="lpara" style="color: black;margin-bottom: 0px; margin-top: 40px; cursor: pointer;">First time here? <b style="color: #6A4C96;">Sign up to join our forum</b></p>
-      <p style="color: #6A4C96; margin-top: 15px; cursor: pointer;"><b>Forgot Password?</b></p>
+      <p id="fpara" style="color: #6A4C96; margin-top: 15px; cursor: pointer;"><b>Forgot Password?</b></p>
       </div>
       <div id="regdiv">
         <h1>Register</h1>
@@ -61,7 +61,14 @@
         <input type="password" name="" placeholder="Confirm Password">
         <input type="submit" name="" value="Sign Up">
         <p id="rpara" style="color: black; margin-top: 10px; cursor: pointer;" >Already have an account? <b style="color: #6A4C96;">Login to get started</b></p>
-        </div>
+      </div>
+      <div id="fpdiv">
+        <h1>Reset</h1>
+        <p>Enter Your email id to reset your password</p>
+        <input type="text" name="" placeholder="Email ID">
+        <input type="submit" name="" value="Continue">
+        <p id="loginpara" style="color: black; margin-top: 20px; cursor: pointer;">Know Password <b style="color: #6A4C96;">Login?</b></p>
+      </div>
     </form>
 
 
@@ -69,9 +76,13 @@
       var slideIndex = 0;
       var lpara = document.getElementById("lpara");
       var rpara = document.getElementById("rpara");
+      var fpara = document.getElementById("fpara");
+      var lopara = document.getElementById("loginpara");
       var ldiv = document.getElementById("logindiv");
       var rdiv = document.getElementById("regdiv");
+      var fdiv = document.getElementById("fpdiv");
       rdiv.style.display = "none";
+      fdiv.style.display = "none";
       showSlides();
     
       function showSlides() {
@@ -94,6 +105,16 @@
       rpara.onclick = function() {
         rdiv.style.display = "none";
         ldiv.style.display = "block";
+      }
+
+      fpara.onclick = function() {
+        ldiv.style.display = "none";
+        fdiv.style.display = "block";
+      }
+
+      lopara.onclick = function() {
+        ldiv.style.display = "block";
+        fdiv.style.display = "none";
       }
 
       </script>
