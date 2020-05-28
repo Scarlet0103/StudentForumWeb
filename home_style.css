@@ -189,7 +189,7 @@ ul li .navimage:hover{
   transition: 0.3s;
   background-color: lightpink;
   width: 600px;
-  height: 90px;
+  height: 110px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
@@ -230,6 +230,95 @@ ul li .navimage:hover{
   font-size: 12px;
   color: white;
 }
+
+.morebtn:before{
+    background: url("more.svg") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    color: #fff;
+    height: 15px;
+    margin-right: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 30px;
+    background-color: #FFB6C1;
+    border: none;
+}
+
+.morebtn{
+  font-family: "Varela Round";
+  width: 90px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: #FFB6C1;
+  outline: none;
+}
+
+.morebtn :after{
+  border: none;
+}
+
+.closebtn:before{
+  background: url("close.svg") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  color: #fff;
+  height: 15px;
+  position: relative;
+  vertical-align: middle;
+  width: 15px;
+  background-color: white;
+  border: none;
+}
+
+.closebtn{
+font-family: "Varela Round";
+color: white;
+cursor: pointer;
+border: none;
+background-color : white;
+outline: none;
+}
+
+.closebtn :after{
+border: none;
+}
+
+.upvotebtn:before{
+  background: url("upvote.svg") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  color: #fff;
+  height: 15px;
+  padding-bottom: 2px;
+  margin-right: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 15px;
+  background-color: #BEA6D4;
+  border: none;
+}
+
+.upvotebtn{
+  margin-left: 12px;
+  border-radius: 8px;
+  padding-top: 4px;
+  font-family: "Varela Round";
+  width: 90px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: #BEA6D4;
+  outline: none;
+}
+
+.upvotebtn :after{
+border: none;
+}
+
 
 h1{
 
@@ -413,7 +502,7 @@ h1{
   width: 90%;
   position: relative;
   background-color: white;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
 }
