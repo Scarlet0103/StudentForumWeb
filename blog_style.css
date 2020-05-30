@@ -134,7 +134,7 @@ ul li .navimage:hover{
     margin-right: 35px;
     padding: 8px;
     text-align: left;
-    border: 1px solid #6A4C96;
+    border: 1px solid lightpink;
     width: 400px;
     height: 42px;
     outline: none;
@@ -154,7 +154,7 @@ ul li .navimage:hover{
     margin-right: 35px;
     padding: 8px;
     text-align: start;
-    border: 1px solid #6A4C96;
+    border: 1px solid lightpink;
     width: 400px;
     height: 300px;
     outline: none;
@@ -174,7 +174,7 @@ ul li .navimage:hover{
   margin-right: 28px;
   right: 0;
   text-align: center;
-  border: 2px solid #6A4C96;
+  border: 2px solid lightpink;
   padding: 14px 40px;
   outline: none;
   color: black;
@@ -183,7 +183,7 @@ ul li .navimage:hover{
   }
 
   .box input[type = "submit"]:hover{
-    background: #6A4C96;
+    background: lightpink;
     color: white;
   }
 

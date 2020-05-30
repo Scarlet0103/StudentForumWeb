@@ -1,8 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url('background_violet.jpg');
-    background-position: initial;
+    background: url('background_violet.png') no-repeat center center fixed;
+  	background-size: cover;
+	  height: 100%;
+	  overflow: hidden;
 }
 
 .background{
@@ -31,7 +33,7 @@ body{
 
 }
 
-ul {
+.navbar {
   position: absolute;
     list-style-type: none;
     margin-top: 50px;
@@ -46,36 +48,25 @@ ul {
     background-color: #21033B;
   }
   
- ul li img {
+  .navimage{
+    width: 20px;
+    height: 20px;
     display: block;
     color: white;
-    
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
+}
 
- ul li img:hover {
-    background-color:#55396D;
-    color: white;
-    display: block;
+ul li .navimage:hover{
+  background-color:#55396D;
+  color: white;
+  display: block;
+}
 
-  }
-
-  li a {
-    display: block;
-    color: white;
-    margin-top: 8px;
-    margin-left: 8px;
-  }
-
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
 
 
   .complaintcard{
@@ -274,8 +265,6 @@ ul {
     color: black;
     text-shadow: none;
     background: white;
-    border: #6A4C96 solid;
-    outline: 1px solid #6A4C96;
     border-radius: 8px;
     cursor: pointer;
   }
@@ -302,4 +291,279 @@ ul {
     }
   }
   
+  .complaintcards{
+    margin-top: 150px;
+    margin-left: 150px;
+    position: absolute;
+  }
   
+  .compcard{
+    box-shadow: 0 4px 8px 0 white;
+    background-color: white;
+    transition: 0.3s;
+    width: 700px;
+    height: 500px;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    float: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .compcard::-webkit-scrollbar{
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+  
+  
+  .eachcompcard{
+    transition: 0.3s;
+    background-color: #BEA6D4;
+    width: 600px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .complaintcardname{
+    margin: 0px;
+    margin-left: 8px;
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-family: "Varela Round";
+    font-size: 14px;
+    color: white;
+  }
+  
+  .complaintcardtag{
+    margin: 0px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+    font-family: "Varela Round";
+    font-size: 10px;
+    color: white;
+  }
+  
+  .complaintcardmsg{
+    margin: 0px;
+    height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    font-family: "Varela Round";
+    font-size: 12px;
+    color: white;
+  }
+
+  .morebtn:before{
+    background: url("more.svg") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    color: #fff;
+    height: 15px;
+    margin-right: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 30px;
+    background-color: #BEA6D4;
+    border: none;
+}
+
+.morebtn{
+  font-family: "Varela Round";
+  width: 90px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: #BEA6D4;
+  outline: none;
+}
+
+.morebtn :after{
+  border: none;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  overflow-y: scroll;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+.modal-content::-webkit-scrollbar{
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.eleblogcard{
+  transition: 0.3s;
+  background-color: lightpink;
+  width: 90%;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.eleblogcardname{
+  margin: 0px;
+  margin-bottom: 10px;
+  font-family: "Varela Round";
+  font-size: 18px;
+  color: white;
+}
+
+.eleblogcardmsg{
+  margin: 0px;
+  font-family: "Varela Round";
+  font-size: 16px;
+  color: white;
+}
+
+.upvotebtn:before{
+  background: url("upvote.svg") no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  color: #fff;
+  height: 15px;
+  padding-bottom: 2px;
+  margin-right: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 15px;
+  background-color: lightpink;
+  border: none;
+}
+
+.upvotebtn{
+  margin-left: 12px;
+  border-radius: 4px;
+  padding-top: 4px;
+  font-family: "Varela Round";
+  width: 90px;
+  height: 28px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background-color: lightpink;
+  outline: none;
+}
+
+.upvotebtn :after{
+border: none;
+}
+
+.allcomments{
+  width: 90%;
+  position: relative;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.cmt{
+  display: block;
+  position: relative;
+  margin-top: 12px;
+  /* width: 90%; */
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+}
+
+.cmt-content{
+  /* position: absolute;
+  float: left; */
+  width: 90%;
+  background-color: lightpink;
+  border-radius: 4px;
+  padding: 0px 3px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.cmttext{
+
+  padding: 8px;
+  width: 75%;
+  margin-left: 8px;
+  border:0;
+  font-family: "Varela Round";
+  font-size: 14px;
+  background: white;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.cmtbtn{
+  
+  width: 15%;
+  padding: 6px;
+  margin-right: 5%;
+  border:0;
+  font-family: "Varela Round";
+  font-size: 16px;
+  background: white;
+  float: right;
+  display: block;
+  text-align: center;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cmtbtn:hover{
+  color: white;
+  background-color: #FF7086;
+}
